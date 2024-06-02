@@ -1,3 +1,7 @@
+''' A little girl having a basket in her hand move right and left to collect the falling coins in a beach.
+Once when she missed collecting 3 coins and they fell on the ground the girl loses all th chances,
+since totally 3 chances were provided for collecting the coins.'''
+
 import turtle
 import random
 sea=turtle.Screen()
@@ -60,7 +64,6 @@ while True:
              chances.goto(-240,240)
              chances.write("Sorry!!! You lost",font=("Courier",35,"bold"))
              break
-             #exit(0)
         x=random.randint(-280,280)
         coin.goto(x,280)
     if coin.distance(hunter) < 50:
@@ -70,6 +73,4 @@ while True:
          x=random.randint(-280,280)
          coin.goto(x,280)
     
-
 turtle.done()
-
